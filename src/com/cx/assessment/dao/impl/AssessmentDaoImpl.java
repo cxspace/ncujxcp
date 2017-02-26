@@ -37,4 +37,16 @@ public class AssessmentDaoImpl extends BaseDaoImpl<Assessment> implements Assess
 
         query.executeUpdate();
     }
+
+    @Override
+    public List<Assessment> findIndexAssessment() {
+
+        Query query = getSession().createQuery("from Assessment");
+
+        query.setFirstResult(0);
+
+        query.setMaxResults(6);
+
+        return query.list();
+    }
 }

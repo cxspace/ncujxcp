@@ -24,6 +24,16 @@
 
         </action>
 
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="front_news_*" class="com.cx.news.action.NewsFrontAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/front/to/{1}.jsp</result>
+
+
+        </action>
+
     </package>
 
 </struts>

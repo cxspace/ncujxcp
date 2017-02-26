@@ -17,4 +17,6 @@ public interface PolicyService extends BaseService<Policy> {
 
     public void deletePolicyDocumentByDocId(String doc_id);
 
+    public List<Policy> findIndexPolicy();
+
 }

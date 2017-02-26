@@ -44,4 +44,9 @@ public class InfoServiceImpl extends BaseServiceImpl<Info> implements InfoServic
     public void deleteInfoDocumentByDocId(String doc_id) {
         infoDao.deleteInfoDocumentByDocId(doc_id);
     }
+
+    @Override
+    public List<Info> findIndexInfo() {
+        return infoDao.findIndexInfo();
+    }
 }

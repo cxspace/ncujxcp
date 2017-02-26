@@ -13,8 +13,7 @@ public class BaseAction extends ActionSupport {
     private int pageNo = 1;
 
     //每页记录数
-    private int pageSize = 8;
-
+    private int pageSize = 6;
 
 
     public int getPageNo() {

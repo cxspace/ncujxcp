@@ -18,4 +18,7 @@ public interface DynamicDao extends BaseDao<Dynamic> {
 
     public void deleteDynamicDocumentByDocId(String doc_id);
 
+    public List<Dynamic> findIndexDynamic();
+
+
 }

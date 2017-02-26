@@ -66,17 +66,48 @@ public class HomeAction extends ActionSupport {
 
     public String front() {
 
-        adviceList = adviceService.findObjects();
+        adviceList = adviceService.findIndexAdvice();
 
-        infoList = infoService.findObjects();
 
-        assessmentList = assessmentService.findObjects();
+        infoList = infoService.findIndexInfo();
 
-        dynamicList = dynamicService.findObjects();
+        for (int i = 0 ; i < infoList.size() ; i++){
 
-        documentList = documentService.findObjects();
+            String time = infoList.get(i).getTime();
 
-        policyList = policyService.findObjects();
+            time = time.substring(5,11);
+
+            infoList.get(i).setTime(time);
+
+        }
+
+        assessmentList = assessmentService.findIndexAssessment();
+
+        for (int i = 0 ; i < assessmentList.size() ; i++){
+
+            String time = assessmentList.get(i).getTime();
+
+            time = time.substring(5,11);
+
+            assessmentList.get(i).setTime(time);
+
+        }
+
+        dynamicList = dynamicService.findIndexDynamic();
+
+        for (int i = 0 ; i < dynamicList.size() ; i++){
+
+            String time = dynamicList.get(i).getTime();
+
+            time = time.substring(5,11);
+
+            dynamicList.get(i).setTime(time);
+
+        }
+
+        documentList = documentService.findIndexDocument();
+
+        policyList = policyService.findIndexPolicy();
 
         newsList = newsService.findObjects();
 

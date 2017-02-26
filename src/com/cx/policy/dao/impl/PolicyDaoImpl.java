@@ -33,4 +33,16 @@ public class PolicyDaoImpl extends BaseDaoImpl<Policy> implements PolicyDao {
         SQLQuery query = getSession().createSQLQuery("DELETE FROM t_r_policy_doc WHERE doc_id = '" +doc_id+ "'");
         query.executeUpdate();
     }
+
+    @Override
+    public List<Policy> findIndexPolicy() {
+
+        Query query = getSession().createQuery("from Policy");
+
+        query.setFirstResult(0);
+
+        query.setMaxResults(8);
+
+        return query.list();
+    }
 }

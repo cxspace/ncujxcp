@@ -16,5 +16,7 @@ public interface AdviceService extends BaseService<Advice> {
     public List<AdviceDocument> getAdviceDocumentsByAdviceId(String adviceId);
 
     public void deleteAdviceDocumentByDocId(String doc_id);
-    
+
+    public List<Advice> findIndexAdvice();
+
 }

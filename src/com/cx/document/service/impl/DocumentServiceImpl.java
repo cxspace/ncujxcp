@@ -7,6 +7,7 @@ import com.cx.document.service.DocumentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by liujie on 2017/2/26.
@@ -23,5 +24,10 @@ public class DocumentServiceImpl extends BaseServiceImpl<Document> implements Do
 
         super.setBaseDao(documentDao);
         this.documentDao = documentDao;
+    }
+
+    @Override
+    public List<Document> findIndexDocument() {
+        return documentDao.findIndexDocument();
     }
 }

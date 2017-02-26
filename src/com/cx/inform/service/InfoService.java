@@ -17,4 +17,7 @@ public interface InfoService extends BaseService<Info> {
 
       public void deleteInfoDocumentByDocId(String doc_id);
 
+      public List<Info> findIndexInfo();
+
+
 }

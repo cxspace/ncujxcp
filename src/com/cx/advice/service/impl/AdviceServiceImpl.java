@@ -43,4 +43,9 @@ public class AdviceServiceImpl extends BaseServiceImpl<Advice> implements Advice
     public void deleteAdviceDocumentByDocId(String doc_id) {
         adviceDao.deleteAdviceDocumentByDocId(doc_id);
     }
+
+    @Override
+    public List<Advice> findIndexAdvice() {
+        return adviceDao.findIndexAdvice();
+    }
 }

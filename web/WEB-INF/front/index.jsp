@@ -67,16 +67,15 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <ul>
-    <li><a href="index.html">首页</a></li>
-    <li><a href="WEB-INF/front/to/zzjg.html">组织机构</a></li>
-    <li><a href="WEB-INF/front/to/tzgg.html">通知公告</a></li>
-    <li><a href="WEB-INF/front/to/zcwj.html">政策文件</a></li>
-    <li><a href="WEB-INF/front/to/pgdt.html">评估动态</a></li>
-    <li><a href="to/ztsj.html">学校自评</a></li>
-    <li><a href="WEB-INF/front/to/tszs.html">他山之石</a></li>
-    <li><a href="WEB-INF/front/to/zlxz.html">资料下载</a></li>
+    <li><a href="${pageContext.request.contextPath}/">首页</a></li>
+    <li><a href="${pageContext.request.contextPath}/">组织机构</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_inform_infoList.action">通知公告</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学校自评</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
   </ul>
-
 
   <!--<div class="banner"><img src="${pageContext.request.contextPath}/common/images/title_01.jpg" width="1000" height="320" /></div>-->
 </div>
@@ -109,45 +108,20 @@
 
         <div style="margin-right: 15px">
 
-          <h5><a class="more" href="#">更多 >></a> 通知公告</h5>
+          <h5><a class="more" href="${pageContext.request.contextPath}/front_inform_infoList.action">更多 >></a> 通知公告</h5>
+
+          <br/>
+
+          <s:iterator value="infoList" status="st">
 
 
+          <li>
+            <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_inform_info_detail.action?info.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
+          </li>
 
-          <br>
+            <br>
+          </s:iterator>
 
-
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br>
 
 
         </div>
@@ -160,48 +134,23 @@
 
           <ul class="items">
 
-            <li><a title="标题一" href="WEB-INF/front/to/pgdt_detail.html"><img src="${pageContext.request.contextPath}/common/images/title_01.jpg" style="width: 100%;height: 250px"></a></li>
-
-            <li><a title="标题二" href="WEB-INF/front/to/pgdt_detail.html"><img src="${pageContext.request.contextPath}/common/images/title_02.jpg" style="width: 100%;height: 250px"></a></li>
-
-            <li><a title="标题三" href="WEB-INF/front/to/pgdt_detail.html"><img src="${pageContext.request.contextPath}/common/images/title_03.jpg" style="width: 100%;height: 250px"></a></li>
+            <s:iterator value="newsList" status="st">
+            <li><a title="<s:property value="title"></s:property>" href="${pageContext.request.contextPath}/front_news_news_detail.action?news.id=<s:property value="id"></s:property>"><img src="${pageContext.request.contextPath}/<s:property value="img"></s:property>" style="width: 100%;height: 250px"></a></li>
+            </s:iterator>
 
           </ul>
         </div>
 
-        <h5><a class="more" href="#">更多 >></a>评估动态</h5>
-        <br>
-        <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
+        <h5><a class="more" href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">更多 >></a>评估动态</h5>
         <br>
 
+        <s:iterator value="dynamicList" status="st">
+
         <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
+          <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_dynamic_dynamic_detail.action?dynamic.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
         </li>
         <br>
-
-        <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br>
-
-
-        <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br>
-
-        <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br>
-
-
-        <li>
-          <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-
+        </s:iterator>
 
 
 
@@ -211,27 +160,23 @@
 
         <div style="margin-left: 15px">
           <h5>
-            <a class="more" href="#">更多 >></a>
+            <a class="more" href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">更多 >></a>
             学校自评
           </h5>
+          <br/>
+
+          <s:iterator value="assessmentList" status="st">
+
           <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
+            <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_assessment_assessment_detail.action?assessment.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
           </li>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <li>
-            <span>02-01</span> &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
+
+            <br/>
+
+          </s:iterator>
+
+
+
           <br/>
 
         </div>
@@ -275,34 +220,16 @@
 
 
           <h5>
-            <a class="more" href="#">更多 >></a>
+            <a class="more" href="${pageContext.request.contextPath}/front_document_documentList.action">更多 >></a>
             资料下载</h5>
           <br>
 
+          <s:iterator value="documentList" status="st">
           <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
+            &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/<s:property value="link"></s:property>"><s:property value="title"></s:property></a>
           </li>
           <br/>
-
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
+          </s:iterator>
 
 
         </div>
@@ -312,33 +239,17 @@
 
 
         <h5>
-          <a class="more" href="#">更多 >></a>
+          <a class="more" href="${pageContext.request.contextPath}/front_policy_policyList.action">更多 >></a>
           政策文件</h5>
         <br>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br/>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br/>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br/>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br/>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
-        <br/>
-        <li>
-          &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-        </li>
 
+        <s:iterator value="policyList" status="st">
+
+        <li>
+          &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_policy_policy_detail.action?policy.id=<s:property value="id"></s:property> "><s:property value="title"></s:property></a>
+        </li>
+        <br/>
+        </s:iterator>
 
 
       </div>
@@ -349,34 +260,17 @@
 
 
           <h5>
-            <a class="more" href="#">更多 >></a>
+            <a class="more" href="${pageContext.request.contextPath}/front_advice_adviceList.action">更多 >></a>
             他山之石</h5>
           <br>
 
+          <s:iterator value="adviceList" status="st">
           <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
+            &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_advice_advice_detail.action?advice.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
           </li>
           <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
-          <li>
-            &nbsp;&nbsp;&nbsp;<a href="index.html">南昌大学本科教育改革和审核评估...</a>
-          </li>
-          <br/>
+          </s:iterator>
+
         </div>
       </div>
 
@@ -384,8 +278,6 @@
     </div>
 
   </div>
-
-
 
 </div>
 

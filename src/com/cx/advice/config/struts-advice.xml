@@ -24,6 +24,14 @@
 
         </action>
 
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="front_advice_*" class="com.cx.advice.action.AdviceFrontAction" method="{1}">
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/front/to/{1}.jsp</result>
+
+
+        </action>
 
     </package>
 

@@ -17,4 +17,6 @@ public interface DynamicService extends BaseService<Dynamic> {
 
     public void deleteDynamicDocumentByDocId(String doc_id);
 
+    public List<Dynamic> findIndexDynamic();
+
 }

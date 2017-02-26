@@ -17,4 +17,6 @@ public interface AssessmentDao extends BaseDao<Assessment>{
 
     public void deleteAssessmentDocumentByDocId(String doc_id);
 
+    public List<Assessment> findIndexAssessment();
+
 }

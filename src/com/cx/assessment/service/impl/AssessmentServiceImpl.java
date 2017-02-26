@@ -43,4 +43,8 @@ public class AssessmentServiceImpl extends BaseServiceImpl<Assessment> implement
         assessmentDao.deleteAssessmentDocumentByDocId(doc_id);
     }
 
+    @Override
+    public List<Assessment> findIndexAssessment() {
+        return assessmentDao.findIndexAssessment();
+    }
 }

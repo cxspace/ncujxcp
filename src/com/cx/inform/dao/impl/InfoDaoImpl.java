@@ -36,4 +36,16 @@ public class InfoDaoImpl extends BaseDaoImpl<Info> implements InfoDao {
 
         query.executeUpdate();
     }
+
+    @Override
+    public List<Info> findIndexInfo() {
+
+        Query query = getSession().createQuery("from Info");
+
+        query.setFirstResult(0);
+
+        query.setMaxResults(8);
+
+        return query.list();
+    }
 }

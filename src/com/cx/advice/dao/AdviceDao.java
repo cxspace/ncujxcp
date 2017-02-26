@@ -16,5 +16,7 @@ public interface AdviceDao extends BaseDao<Advice> {
     public List<AdviceDocument> getAdviceDocumentsByAdviceId(String adviceId);
 
     public void deleteAdviceDocumentByDocId(String doc_id);
-    
+
+    public List<Advice> findIndexAdvice();
+
 }

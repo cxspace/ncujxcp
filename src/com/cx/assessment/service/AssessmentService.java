@@ -17,4 +17,6 @@ public interface AssessmentService extends BaseService<Assessment> {
 
     public void deleteAssessmentDocumentByDocId(String doc_id);
 
+    public List<Assessment> findIndexAssessment();
+
 }

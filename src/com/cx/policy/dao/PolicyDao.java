@@ -16,5 +16,8 @@ public interface PolicyDao extends BaseDao<Policy> {
     public List<PolicyDocument> getPolicyDocumentsByPolicyId(String policyId);
 
     public void deletePolicyDocumentByDocId(String doc_id);
+
+    public List<Policy> findIndexPolicy();
+
 }
 

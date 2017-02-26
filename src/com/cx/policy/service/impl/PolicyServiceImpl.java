@@ -43,4 +43,9 @@ public class PolicyServiceImpl extends BaseServiceImpl<Policy> implements Policy
     public void deletePolicyDocumentByDocId(String doc_id) {
         policyDao.deletePolicyDocumentByDocId(doc_id);
     }
+
+    @Override
+    public List<Policy> findIndexPolicy() {
+        return policyDao.findIndexPolicy();
+    }
 }

@@ -45,4 +45,9 @@ public class DynamicServiceImpl extends BaseServiceImpl<Dynamic> implements Dyna
     public void deleteDynamicDocumentByDocId(String doc_id) {
         dynamicDao.deleteDynamicDocumentByDocId(doc_id);
     }
+
+    @Override
+    public List<Dynamic> findIndexDynamic() {
+        return dynamicDao.findIndexDynamic();
+    }
 }

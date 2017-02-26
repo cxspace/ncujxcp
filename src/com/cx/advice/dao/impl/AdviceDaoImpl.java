@@ -36,4 +36,15 @@ public class AdviceDaoImpl extends BaseDaoImpl<Advice> implements AdviceDao{
 
         query.executeUpdate();
     }
+
+    @Override
+    public List<Advice> findIndexAdvice() {
+        Query query = getSession().createQuery("from Advice");
+
+        query.setFirstResult(0);
+
+        query.setMaxResults(6);
+
+        return query.list();
+    }
 }

@@ -24,6 +24,15 @@
 
         </action>
 
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="front_assessment_*" class="com.cx.assessment.action.AssessmentFrontAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/front/to/{1}.jsp</result>
+
+
+        </action>
 
     </package>
 

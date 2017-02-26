@@ -19,5 +19,6 @@ public interface InfoDao extends BaseDao<Info> {
 
       public void deleteInfoDocumentByDocId(String doc_id);
 
+      public List<Info> findIndexInfo();
 
 }
