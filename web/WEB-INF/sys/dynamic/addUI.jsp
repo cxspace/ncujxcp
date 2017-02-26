@@ -93,19 +93,35 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="../tzgg/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_inform_listUI.action">
                                 <span class="title">通知公告管理</span>
                             </a>
                         </li>
                         <li>
-                            <a href="../zcwj/listUI.html">
-                                <span class="title">政策文件管理</span>
+                            <a href="${pageContext.request.contextPath}/sys_informDoc_info_list.action">
+                                <span class="title">通知公告附件管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_policy_listUI.action">
+                                <span class="title">政策文件管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_policyDoc_policy_list.action">
+                                <span class="title">政策文件附件管理</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_dynamic_listUI.action">
                                 <span class="title">评估动态管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_dynamicDoc_dynamic_list.action">
+                                <span class="title">评估动态附件管理</span>
                             </a>
                         </li>
 

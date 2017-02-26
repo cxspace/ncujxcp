@@ -1,4 +1,3 @@
-<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -10,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Neon Admin Panel" />
     <meta name="author" content="" />
-
 
     <title>OUR_SYS | INDEX</title>
 
@@ -27,6 +25,16 @@
 
     <script src="${pageContext.request.contextPath}/assets/js/jquery-1.11.0.min.js"></script>
     <script>$.noConflict();</script>
+
+
+    <script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/assets/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/assets/js/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/assets/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script>
+        window.UEDITOR_HOME_URL = "../assets/js/ueditor/";
+        var ue = UE.getEditor('editor');
+    </script>
 
     <!--[if lt IE 9]>
     <script src="${pageContext.request.contextPath}/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -118,6 +126,12 @@
                         </li>
 
                         <li>
+                            <a href="../xxzp/listUI.html">
+                                <span class="title">学校自评管理</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a href="../tszs/listUI.html">
                                 <span class="title">他山之石管理</span>
                             </a>
@@ -134,7 +148,6 @@
                                 <span class="title">主页新闻管理</span>
                             </a>
                         </li>
-
 
                     </ul>
                 </li>
@@ -176,9 +189,16 @@
                 <ul class="list-inline links-list pull-right">
 
 
+                    <li>
+                        <a href="#">
+                            个人主页
+                        </a>
+                    </li>
+
+                    |
 
                     <li>
-                        <a href="../admin.html">
+                        <a href="login.html">
                             注销 <i class="entypo-logout right"></i>
                         </a>
                     </li>
@@ -259,87 +279,58 @@
             <li>
                 <a>评估动态管理</a>
             </li>
+            <li class="active">
 
+                <strong>新增附件</strong>
+            </li>
         </ol>
 
-        <h3>评估动态列表</h3>
-
-        <table class="table table-bordered table-striped datatable" id="table-2">
-            <thead>
-            <tr>
-                <th>
-                    <div class="checkbox checkbox-replace">
-                        <input type="checkbox" id="chk">
-                    </div>
-                </th>
-                <th>标题</th>
-                <th>发布时间</th>
-
-                <th>浏览量</th>
+        <h3>新增评估动态附件</h3>
 
 
+        <form role="form" class="form-horizontal form-groups-bordered" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/sys_dynamicDoc_add.action">
 
+            <div class="form-group">
+                <label for="field-1" class="col-sm-3 control-label">评估动态标题</label>
 
+                <div class="col-sm-5">
+                    <input type="text" name="dynamicDoc.title" class="form-control" id="field-1" placeholder="请输入附件标题">
+                </div>
+            </div>
 
-                <th>
+            <br>
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_addUI.action" class="btn btn-info btn-sm btn-icon icon-left">
-                        <i class="entypo-info"></i>
-                        新增
-                    </a>
+            <label class="control-label">选择上传附件</label>
 
-                </th>
+            <br><br>
 
+            <input type="file" name="document"/>
 
-            </tr>
-            </thead>
+            <br>
+            <br>
 
-            <tbody>
-
-            <s:iterator value="dynamicList" status="st">
-            <tr>
-                <td>
-                    <div class="checkbox checkbox-replace">
-                        <input type="checkbox" id="chk-3">
-                    </div>
-                </td>
-                <td>
-                    <s:property value="title"></s:property>
-                </td>
-
-                <td>
-                    <s:property value="time"></s:property>
-                </td>
-
-                <td>
-                    <s:property value="count"></s:property>
-                </td>
+            <hr>
 
 
 
-                <td>
+            <div class="form-group">
+
+                <div class="col-sm-offset-5 col-sm-5">
+
+                    <button onclick="javascript:history.go(-1)" class="btn btn-default">返回</button>
+
+                    <button type="submit" class="btn btn-default">上传</button>
+
+                </div>
+            </div>
 
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_delete.action?dynamic.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
-                        <i class="entypo-cancel"></i>
-                        删除
-                    </a>
 
-                </td>
-
-
-            </tr>
-
-            </s:iterator>
-            </tbody>
-        </table>
+        </form>
 
 
 
 
-
-        <br>
-        <br>
 
         <br>
         <br>
@@ -380,6 +371,7 @@
 <script src="${pageContext.request.contextPath}/assets/js/resizeable.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/neon-api.js"></script>
 
+<script src="${pageContext.request.contextPath}/assets/js/bootstrap-datepicker.js"></script>
 
 <!-- Imported scripts on this page -->
 <script src="${pageContext.request.contextPath}/assets/js/jquery.sparkline.min.js"></script>

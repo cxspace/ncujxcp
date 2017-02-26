@@ -19,7 +19,7 @@
 
             <result name="listUI">/WEB-INF/sys/dynamic_doc/listUI.jsp</result>
 
-            <result name="infoListUI">/WEB-INF/sys/dynamic_doc/dynamic_list.jsp</result>
+            <result name="dynamicListUI">/WEB-INF/sys/dynamic_doc/dynamic_list.jsp</result>
 
             <!--重定向到列表-->
             <result name="list" type="redirectAction">

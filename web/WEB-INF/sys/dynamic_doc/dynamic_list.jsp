@@ -118,6 +118,12 @@
                         </li>
 
                         <li>
+                            <a href="../xxzp/listUI.html">
+                                <span class="title">学校自评管理</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a href="../tszs/listUI.html">
                                 <span class="title">他山之石管理</span>
                             </a>
@@ -283,10 +289,7 @@
 
                 <th>
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_addUI.action" class="btn btn-info btn-sm btn-icon icon-left">
-                        <i class="entypo-info"></i>
-                        新增
-                    </a>
+
 
                 </th>
 
@@ -316,15 +319,13 @@
                 </td>
 
 
-
                 <td>
 
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_delete.action?dynamic.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
-                        <i class="entypo-cancel"></i>
-                        删除
+                    <a href="${pageContext.request.contextPath}/sys_dynamicDoc_listUI.action?dynamic.id=<s:property value="id"></s:property>" class="btn btn-default btn-sm btn-icon icon-left">
+                        <i class="entypo-pencil"></i>
+                        附件管理
                     </a>
-
                 </td>
 
 

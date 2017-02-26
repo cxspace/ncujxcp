@@ -11,7 +11,6 @@
     <meta name="description" content="Neon Admin Panel" />
     <meta name="author" content="" />
 
-
     <title>OUR_SYS | INDEX</title>
 
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -114,6 +113,11 @@
                         <li>
                             <a href="${pageContext.request.contextPath}/sys_dynamicDoc_dynamic_list.action">
                                 <span class="title">评估动态附件管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../xxzp/listUI.html">
+                                <span class="title">学校自评管理</span>
                             </a>
                         </li>
 
@@ -262,7 +266,7 @@
 
         </ol>
 
-        <h3>评估动态列表</h3>
+        <h3>评估动态附件列表</h3>
 
         <table class="table table-bordered table-striped datatable" id="table-2">
             <thead>
@@ -272,18 +276,13 @@
                         <input type="checkbox" id="chk">
                     </div>
                 </th>
-                <th>标题</th>
+                <th>文件名</th>
                 <th>发布时间</th>
-
-                <th>浏览量</th>
-
-
-
 
 
                 <th>
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_addUI.action" class="btn btn-info btn-sm btn-icon icon-left">
+                    <a href="${pageContext.request.contextPath}/sys_dynamicDoc_addUI.action" class="btn btn-info btn-sm btn-icon icon-left">
                         <i class="entypo-info"></i>
                         新增
                     </a>
@@ -296,7 +295,9 @@
 
             <tbody>
 
-            <s:iterator value="dynamicList" status="st">
+
+            <s:iterator value="dynamicDocList" status="st">
+
             <tr>
                 <td>
                     <div class="checkbox checkbox-replace">
@@ -307,20 +308,16 @@
                     <s:property value="title"></s:property>
                 </td>
 
-                <td>
-                    <s:property value="time"></s:property>
-                </td>
 
                 <td>
                     <s:property value="count"></s:property>
                 </td>
 
 
-
                 <td>
 
 
-                    <a href="${pageContext.request.contextPath}/sys_dynamic_delete.action?dynamic.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
+                    <a href="${pageContext.request.contextPath}/sys_dynamicDoc_delete.action?dynamicDoc.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
                         <i class="entypo-cancel"></i>
                         删除
                     </a>
@@ -349,6 +346,11 @@
         <br>
 
 
+        <center>
+            <a class="btn btn-default" href="${pageContext.request.contextPath}/sys_dynamicDoc_dynamic_list.action">返回通知公告列表</a>
+
+        </center>
+
         <br>
         <br>
         <br>
@@ -370,6 +372,8 @@
 
 
 
+
+<!-- Imported styles on this page -->
 
 
 <!-- Bottom scripts (common) -->

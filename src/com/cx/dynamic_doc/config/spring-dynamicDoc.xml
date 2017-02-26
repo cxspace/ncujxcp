@@ -14,12 +14,12 @@
          http://www.springframework.org/schema/tx
      	 http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <bean id="dynamicDocDao" class="com.cx.dynamic.dao.impl.DynamicDaoImpl" parent="baseDao">
+    <bean id="dynamicDocDao" class="com.cx.dynamic_doc.dao.impl.DynamicDocDaoImpl" parent="baseDao">
         <!--<property name="sessionFactory" ref="sessionFactory"></property>-->
     </bean>
 
     <!--扫描注解-->
-    <context:component-scan base-package="com.cx.dynamic.service.impl"></context:component-scan>
+    <context:component-scan base-package="com.cx.dynamic_doc.service.impl"></context:component-scan>
 
 
 </beans>

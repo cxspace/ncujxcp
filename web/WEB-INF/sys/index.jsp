@@ -111,7 +111,11 @@
                                 <span class="title">评估动态管理</span>
                             </a>
                         </li>
-
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_dynamicDoc_dynamic_list.action">
+                                <span class="title">评估动态附件管理</span>
+                            </a>
+                        </li>
 
 
                         <li>
