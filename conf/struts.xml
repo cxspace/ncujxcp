@@ -35,4 +35,16 @@
 
     <include file="com/cx/dynamic_doc/config/struts-dynamicDoc.xml"></include>
 
+    <include file="com/cx/assessment/config/struts-assessment.xml"></include>
+
+    <include file="com/cx/assessment_doc/config/struts-assessmentDoc.xml"></include>
+
+    <include file="com/cx/advice/config/struts-advice.xml"></include>
+
+    <include file="com/cx/advice_doc/config/struts-adviceDoc.xml"></include>
+
+    <include file="com/cx/document/config/struts-document.xml"></include>
+
+    <include file="com/cx/news/config/struts-news.xml"></include>
+
 </struts>

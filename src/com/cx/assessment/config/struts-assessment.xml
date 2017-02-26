@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="assessment-action" namespace="/" extends="struts-default">
+
+
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="sys_assessment_*" class="com.cx.assessment.action.AssessmentSysAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/sys/assessment/{1}.jsp</result>
+
+            <result name="addUI">/WEB-INF/sys/assessment/addUI.jsp</result>
+
+            <!--重定向到列表-->
+            <result name="list" type="redirectAction">
+                <param name="actionName">sys_assessment_listUI</param>
+            </result>
+
+        </action>
+
+
+    </package>
+
+</struts>

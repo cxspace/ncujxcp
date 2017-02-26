@@ -10,297 +10,531 @@
     <schema id="4" parent="1" name="mysql"/>
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="sys"/>
-    <table id="7" parent="2" name="t_dynamic"/>
-    <table id="8" parent="2" name="t_dynamic_document"/>
-    <table id="9" parent="2" name="t_info"/>
-    <table id="10" parent="2" name="t_info_document"/>
-    <table id="11" parent="2" name="t_person"/>
-    <table id="12" parent="2" name="t_policy"/>
-    <table id="13" parent="2" name="t_policy_document"/>
-    <table id="14" parent="2" name="t_r_dynamic_doc"/>
-    <table id="15" parent="2" name="t_r_info_doc"/>
-    <table id="16" parent="2" name="t_r_policy_doc"/>
-    <table id="17" parent="2" name="t_user"/>
-    <column id="18" parent="7" name="info_id">
+    <table id="7" parent="2" name="t_advice"/>
+    <table id="8" parent="2" name="t_advice_document"/>
+    <table id="9" parent="2" name="t_assessment"/>
+    <table id="10" parent="2" name="t_assessment_document"/>
+    <table id="11" parent="2" name="t_document"/>
+    <table id="12" parent="2" name="t_dynamic"/>
+    <table id="13" parent="2" name="t_dynamic_document"/>
+    <table id="14" parent="2" name="t_info"/>
+    <table id="15" parent="2" name="t_info_document"/>
+    <table id="16" parent="2" name="t_news"/>
+    <table id="17" parent="2" name="t_person"/>
+    <table id="18" parent="2" name="t_policy"/>
+    <table id="19" parent="2" name="t_policy_document"/>
+    <table id="20" parent="2" name="t_r_advice_doc"/>
+    <table id="21" parent="2" name="t_r_assessment_doc"/>
+    <table id="22" parent="2" name="t_r_dynamic_doc"/>
+    <table id="23" parent="2" name="t_r_info_doc"/>
+    <table id="24" parent="2" name="t_r_policy_doc"/>
+    <table id="25" parent="2" name="t_user"/>
+    <column id="26" parent="7" name="advice_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="7" name="title">
+    <column id="27" parent="7" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="20" parent="7" name="time">
+    <column id="28" parent="7" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="21" parent="7" name="count">
+    <column id="29" parent="7" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="22" parent="7" name="content">
+    <column id="30" parent="7" name="content">
       <Position>5</Position>
       <DataType>longtext|0</DataType>
     </column>
-    <column id="23" parent="7" name="reserve">
+    <column id="31" parent="7" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="24" parent="7" name="PRIMARY">
-      <ColNames>info_id</ColNames>
+    <key id="32" parent="7" name="PRIMARY">
+      <ColNames>advice_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="25" parent="8" name="document_id">
+    <column id="33" parent="8" name="document_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="8" name="title">
+    <column id="34" parent="8" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="27" parent="8" name="time">
+    <column id="35" parent="8" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="28" parent="8" name="count">
+    <column id="36" parent="8" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="29" parent="8" name="link">
+    <column id="37" parent="8" name="link">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="30" parent="8" name="reserve">
+    <column id="38" parent="8" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="31" parent="8" name="PRIMARY">
+    <key id="39" parent="8" name="PRIMARY">
       <ColNames>document_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="32" parent="9" name="info_id">
+    <column id="40" parent="9" name="assessment_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="9" name="title">
+    <column id="41" parent="9" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="34" parent="9" name="time">
+    <column id="42" parent="9" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="35" parent="9" name="count">
+    <column id="43" parent="9" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="36" parent="9" name="content">
+    <column id="44" parent="9" name="content">
       <Position>5</Position>
       <DataType>longtext|0</DataType>
     </column>
-    <column id="37" parent="9" name="reserve">
+    <column id="45" parent="9" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="38" parent="9" name="PRIMARY">
-      <ColNames>info_id</ColNames>
+    <key id="46" parent="9" name="PRIMARY">
+      <ColNames>assessment_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="39" parent="10" name="document_id">
+    <column id="47" parent="10" name="document_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="10" name="title">
+    <column id="48" parent="10" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="41" parent="10" name="time">
+    <column id="49" parent="10" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="42" parent="10" name="count">
+    <column id="50" parent="10" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="43" parent="10" name="link">
+    <column id="51" parent="10" name="link">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="44" parent="10" name="reserve">
+    <column id="52" parent="10" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="45" parent="10" name="PRIMARY">
+    <key id="53" parent="10" name="PRIMARY">
       <ColNames>document_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="11" name="id">
+    <column id="54" parent="11" name="document_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="11" name="name">
+    <column id="55" parent="11" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="56" parent="11" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="57" parent="11" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="58" parent="11" name="link">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="59" parent="11" name="reserve">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="60" parent="11" name="PRIMARY">
+      <ColNames>document_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="12" name="dynamic_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="12" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="63" parent="12" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="64" parent="12" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="65" parent="12" name="content">
+      <Position>5</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="66" parent="12" name="reserve">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="67" parent="12" name="PRIMARY">
+      <ColNames>dynamic_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="13" name="document_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="13" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="70" parent="13" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="71" parent="13" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="72" parent="13" name="link">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="73" parent="13" name="reserve">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="74" parent="13" name="PRIMARY">
+      <ColNames>document_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="14" name="info_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="14" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="77" parent="14" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="78" parent="14" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="79" parent="14" name="content">
+      <Position>5</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="80" parent="14" name="reserve">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="81" parent="14" name="PRIMARY">
+      <ColNames>info_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="82" parent="15" name="document_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="15" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="84" parent="15" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="85" parent="15" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="86" parent="15" name="link">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="87" parent="15" name="reserve">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="88" parent="15" name="PRIMARY">
+      <ColNames>document_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="89" parent="16" name="news_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="16" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="91" parent="16" name="time">
+      <Position>3</Position>
+      <DataType>varchar(36)|0</DataType>
+    </column>
+    <column id="92" parent="16" name="count">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="93" parent="16" name="content">
+      <Position>5</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="94" parent="16" name="img">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="95" parent="16" name="reserve">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="96" parent="16" name="PRIMARY">
+      <ColNames>news_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="97" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="17" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="48" parent="11" name="PRIMARY">
+    <key id="99" parent="17" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="49" parent="12" name="policy_id">
+    <column id="100" parent="18" name="policy_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="50" parent="12" name="title">
+    <column id="101" parent="18" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="51" parent="12" name="time">
+    <column id="102" parent="18" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="52" parent="12" name="count">
+    <column id="103" parent="18" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="53" parent="12" name="content">
+    <column id="104" parent="18" name="content">
       <Position>5</Position>
       <DataType>longtext|0</DataType>
     </column>
-    <column id="54" parent="12" name="reserve">
+    <column id="105" parent="18" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="55" parent="12" name="PRIMARY">
+    <key id="106" parent="18" name="PRIMARY">
       <ColNames>policy_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="56" parent="13" name="document_id">
+    <column id="107" parent="19" name="document_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="13" name="title">
+    <column id="108" parent="19" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="58" parent="13" name="time">
+    <column id="109" parent="19" name="time">
       <Position>3</Position>
       <DataType>varchar(36)|0</DataType>
     </column>
-    <column id="59" parent="13" name="count">
+    <column id="110" parent="19" name="count">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="60" parent="13" name="link">
+    <column id="111" parent="19" name="link">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="61" parent="13" name="reserve">
+    <column id="112" parent="19" name="reserve">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="62" parent="13" name="PRIMARY">
+    <key id="113" parent="19" name="PRIMARY">
       <ColNames>document_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="63" parent="14" name="doc_id">
+    <column id="114" parent="20" name="doc_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="14" name="dynamic_id">
+    <column id="115" parent="20" name="advice_id">
       <Position>2</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="65" parent="14" name="FK8A99186031FFB0E4">
+    <index id="116" parent="20" name="FK468CB549BD48DD28">
       <ColNames>doc_id</ColNames>
     </index>
-    <key id="66" parent="14" name="PRIMARY">
+    <key id="117" parent="20" name="PRIMARY">
+      <ColNames>doc_id
+advice_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="118" parent="20" name="FK468CB549BD48DD28">
+      <ColNames>doc_id</ColNames>
+      <RefSchemaName>ncu_jxcp</RefSchemaName>
+      <RefTableName>t_advice_document</RefTableName>
+      <RefColNames>document_id</RefColNames>
+    </foreign-key>
+    <column id="119" parent="21" name="doc_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="21" name="assessment_id">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="121" parent="21" name="FKED27CE13D3BE7794">
+      <ColNames>doc_id</ColNames>
+    </index>
+    <key id="122" parent="21" name="PRIMARY">
+      <ColNames>doc_id
+assessment_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="123" parent="21" name="FKED27CE13D3BE7794">
+      <ColNames>doc_id</ColNames>
+      <RefSchemaName>ncu_jxcp</RefSchemaName>
+      <RefTableName>t_assessment_document</RefTableName>
+      <RefColNames>document_id</RefColNames>
+    </foreign-key>
+    <column id="124" parent="22" name="doc_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="22" name="dynamic_id">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="126" parent="22" name="FK8A99186031FFB0E4">
+      <ColNames>doc_id</ColNames>
+    </index>
+    <key id="127" parent="22" name="PRIMARY">
       <ColNames>doc_id
 dynamic_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="67" parent="14" name="FK8A99186031FFB0E4">
+    <foreign-key id="128" parent="22" name="FK8A99186031FFB0E4">
       <ColNames>doc_id</ColNames>
       <RefSchemaName>ncu_jxcp</RefSchemaName>
       <RefTableName>t_dynamic_document</RefTableName>
       <RefColNames>document_id</RefColNames>
     </foreign-key>
-    <column id="68" parent="15" name="doc_id">
+    <column id="129" parent="23" name="doc_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="15" name="info_id">
+    <column id="130" parent="23" name="info_id">
       <Position>2</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="70" parent="15" name="FK9616E7FFFA991921">
+    <index id="131" parent="23" name="FK9616E7FFFA991921">
       <ColNames>doc_id</ColNames>
     </index>
-    <key id="71" parent="15" name="PRIMARY">
+    <key id="132" parent="23" name="PRIMARY">
       <ColNames>doc_id
 info_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="72" parent="15" name="FK9616E7FFFA991921">
+    <foreign-key id="133" parent="23" name="FK9616E7FFFA991921">
       <ColNames>doc_id</ColNames>
       <RefSchemaName>ncu_jxcp</RefSchemaName>
       <RefTableName>t_info_document</RefTableName>
       <RefColNames>document_id</RefColNames>
     </foreign-key>
-    <column id="73" parent="16" name="doc_id">
+    <column id="134" parent="24" name="doc_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="74" parent="16" name="policy_id">
+    <column id="135" parent="24" name="policy_id">
       <Position>2</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="75" parent="16" name="FKE81930839BA932B4">
+    <index id="136" parent="24" name="FKE81930839BA932B4">
       <ColNames>doc_id</ColNames>
     </index>
-    <key id="76" parent="16" name="PRIMARY">
+    <key id="137" parent="24" name="PRIMARY">
       <ColNames>doc_id
 policy_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="77" parent="16" name="FKE81930839BA932B4">
+    <foreign-key id="138" parent="24" name="FKE81930839BA932B4">
       <ColNames>doc_id</ColNames>
       <RefSchemaName>ncu_jxcp</RefSchemaName>
       <RefTableName>t_policy_document</RefTableName>
       <RefColNames>document_id</RefColNames>
     </foreign-key>
-    <column id="78" parent="17" name="user_id">
+    <column id="139" parent="25" name="user_id">
       <Position>1</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="79" parent="17" name="account">
+    <column id="140" parent="25" name="account">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="80" parent="17" name="password">
+    <column id="141" parent="25" name="password">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="81" parent="17" name="reserve">
+    <column id="142" parent="25" name="reserve">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <key id="82" parent="17" name="PRIMARY">
+    <key id="143" parent="25" name="PRIMARY">
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>

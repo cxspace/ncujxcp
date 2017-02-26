@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cx.assessment.entity.AssessmentDocument" table="t_r_assessment_doc">
+
+        <composite-id name="assessmentDocumentId"  class="com.cx.assessment.entity.AssessmentDocumentId">
+            <key-many-to-one name="assessmentDoc" lazy="false" class="com.cx.assessment_doc.entity.AssessmentDoc">
+                <column name="doc_id"></column>
+            </key-many-to-one>
+
+            <key-property name="assessment_id" type="java.lang.String">
+                <column name="assessment_id" length="32"></column>
+            </key-property>
+
+        </composite-id>
+
+    </class>
+
+</hibernate-mapping>

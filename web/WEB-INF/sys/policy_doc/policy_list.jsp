@@ -49,14 +49,12 @@
         <div class="sidebar-menu-inner">
 
             <header class="logo-env">
-
                 <!-- logo -->
                 <div class="logo">
-                    <a href="../index.html">
+                    <a href="${pageContext.request.contextPath}/home_index.action">
                         <img src="${pageContext.request.contextPath}/assets/images/logo/LOGO.png" width="120" alt="" />
                     </a>
                 </div>
-
                 <!-- logo collapse icon -->
                 <div class="sidebar-collapse">
                     <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
@@ -107,31 +105,50 @@
                         </li>
 
                         <li>
-                            <a href="../dynamic/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_dynamic_listUI.action">
                                 <span class="title">评估动态管理</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_dynamicDoc_dynamic_list.action">
+                                <span class="title">评估动态附件管理</span>
+                            </a>
+                        </li>
+
 
                         <li>
-                            <a href="../xxzp/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_assessment_listUI.action">
                                 <span class="title">学校自评管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="../tszs/listUI.html">
-                                <span class="title">他山之石管理</span>
+                            <a href="${pageContext.request.contextPath}/sys_assessmentDoc_assessment_list.action">
+                                <span class="title">学校自评附件管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="../zlxz/fileListUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_advice_listUI.action">
+                                <span class="title">它山之石管理</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_adviceDoc_advice_list.action">
+                                <span class="title">它山之石附件管理</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_document_listUI.action">
                                 <span class="title">资料管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="../zyxw/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_news_listUI.action">
                                 <span class="title">主页新闻管理</span>
                             </a>
                         </li>
@@ -159,10 +176,7 @@
                     <!-- Profile Info -->
                     <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
 
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="${pageContext.request.contextPath}/assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
-                            张三
-                        </a>
+
 
                     </li>
 
@@ -179,7 +193,7 @@
 
 
                     <li>
-                        <a href="${pageContext.request.contextPath}/ToLoginUIServlet">
+                        <a href="${pageContext.request.contextPath}/sys_user_loginOut.action">
                             注销 <i class="entypo-logout right"></i>
                         </a>
                     </li>
@@ -248,9 +262,7 @@
 
 
         <ol class="breadcrumb bc-3" >
-            <li>
-                <a href="../index.html"><i class="fa-home"></i>主页</a>
-            </li>
+
 
             <li>
                 <a>系统管理</a>

@@ -129,9 +129,14 @@ public class InformDocSysAction extends BaseAction{
 
         if (infoDoc!=null){
 
+            System.out.println("=============================================================================");
+
+            System.out.println(infoDoc.getId());
+
             infoService.deleteInfoDocumentByDocId(infoDoc.getId());
 
             infoDocService.delete(infoDoc.getId());
+
 
         }
         return "list_back";

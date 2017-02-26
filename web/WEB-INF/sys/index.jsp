@@ -36,6 +36,12 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <%
+        if (session.getAttribute("USER_INFO")==null){
+
+            response.sendRedirect("sys_user_loginUI.action");
+        }
+    %>
 
 </head>
 
@@ -51,9 +57,7 @@
 
                 <!-- logo -->
                 <div class="logo">
-                    <a href="index.html">
                         <img src="${pageContext.request.contextPath}/assets/images/logo/LOGO.png" width="120" alt="" />
-                    </a>
                 </div>
 
                 <!-- logo collapse icon -->
@@ -119,31 +123,38 @@
 
 
                         <li>
-                            <a href="dynamic/listUI.html">
-                                <span class="title">评估动态管理</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="xxzp/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_assessment_listUI.action">
                                 <span class="title">学校自评管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="tszs/listUI.html">
-                                <span class="title">他山之石管理</span>
+                            <a href="${pageContext.request.contextPath}/sys_assessmentDoc_assessment_list.action">
+                                <span class="title">学校自评附件管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="zlxz/fileListUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_advice_listUI.action">
+                                <span class="title">它山之石管理</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_adviceDoc_advice_list.action">
+                                <span class="title">它山之石附件管理</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="${pageContext.request.contextPath}/sys_document_listUI.action">
                                 <span class="title">资料管理</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="zyxw/listUI.html">
+                            <a href="${pageContext.request.contextPath}/sys_news_listUI.action">
                                 <span class="title">主页新闻管理</span>
                             </a>
                         </li>
@@ -174,7 +185,6 @@
                             <img src="${pageContext.request.contextPath}/assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
                             欢迎您 !，   ${sessionScope.USER_INFO.account}
 
-
                         </a>
 
                     </li>
@@ -195,6 +205,8 @@
                             注销 <i class="entypo-logout right"></i>
                         </a>
                     </li>
+
+
                 </ul>
 
             </div>

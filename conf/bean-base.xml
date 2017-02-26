@@ -78,6 +78,22 @@
 
                 <value>classpath:com/cx/dynamic/entity/DynamicDocument.hbm.xml</value>
 
+                <value>classpath:com/cx/assessment/entity/Assessment.hbm.xml</value>
+
+                <value>classpath:com/cx/assessment_doc/entity/AssessmentDoc.hbm.xml</value>
+
+                <value>classpath:com/cx/assessment/entity/AssessmentDocument.hbm.xml</value>
+
+                <value>classpath:com/cx/advice/entity/Advice.hbm.xml</value>
+
+                <value>classpath:com/cx/advice_doc/entity/AdviceDoc.hbm.xml</value>
+
+                <value>classpath:com/cx/advice/entity/AdviceDocument.hbm.xml</value>
+
+                <value>classpath:com/cx/document/entity/Document.hbm.xml</value>
+
+                <value>classpath:com/cx/news/entity/News.hbm.xml</value>
+
             </list>
         </property>
     </bean>
@@ -130,4 +146,17 @@
     <import resource="classpath:com/cx/dynamic/config/spring-dynamic.xml"/>
 
     <import resource="classpath:com/cx/dynamic_doc/config/spring-dynamicDoc.xml"/>
+
+    <import resource="classpath:com/cx/assessment/config/spring-assessment.xml"/>
+
+    <import resource="classpath:com/cx/assessment_doc/config/spring-assessmentDoc.xml"/>
+
+    <import resource="classpath:com/cx/advice/config/spring-advice.xml"/>
+
+    <import resource="classpath:com/cx/advice_doc/config/spring-adviceDoc.xml"/>
+
+    <import resource="classpath:com/cx/document/config/spring-document.xml"/>
+
+    <import resource="classpath:com/cx/news/config/spring-news.xml"/>
+
 </beans>

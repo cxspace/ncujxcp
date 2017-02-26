@@ -10,6 +10,8 @@
         <!--配置主页跳转,home_* 跳到index页面-->
         <action name="home_*" class="com.cx.home.action.HomeAction" method="{1}">
             <result name="home">/WEB-INF/sys/index.jsp</result>
+
+            <result name="front_index">/WEB-INF/front/index.jsp</result>
         </action>
 
     </package>

@@ -30,7 +30,5 @@
             <column name="reserve" length="100"/>
         </property>
 
-
-
     </class>
 </hibernate-mapping>
