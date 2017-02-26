@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="user-action" namespace="/" extends="struts-default">
+
+
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="sys_user_*" class="com.cx.user.action.UserAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/sys/user/{1}.jsp</result>
+
+            <result name="loginSuccess" type="redirectAction">
+                <param name="actionName">
+                    home_index
+                </param>
+            </result>
+
+            <result name="loginUI">
+                /WEB-INF/sys/user/loginUI.jsp
+            </result>
+
+            <result name="loginError">
+                /WEB-INF/sys/user/loginUI.jsp
+            </result>
+
+            <result name="loginOut">
+                /WEB-INF/sys/user/loginUI.jsp
+            </result>
+
+        </action>
+
+
+
+    </package>
+
+</struts>

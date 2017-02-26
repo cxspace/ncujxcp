@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="dynamic-action" namespace="/" extends="struts-default">
+
+
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="sys_dynamic_*" class="com.cx.dynamic.action.DynamicSysAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/sys/dynamic/{1}.jsp</result>
+
+            <result name="addUI">/WEB-INF/sys/dynamic/addUI.jsp</result>
+
+            <!--重定向到列表-->
+            <result name="list" type="redirectAction">
+                <param name="actionName">sys_dynamic_listUI</param>
+            </result>
+
+        </action>
+
+
+    </package>
+
+</struts>

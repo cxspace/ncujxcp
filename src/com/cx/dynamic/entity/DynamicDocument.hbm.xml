@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cx.dynamic.entity.DynamicDocument" table="t_r_dynamic_doc">
+
+        <composite-id name="dynamicDocumentId"  class="com.cx.dynamic.entity.DynamicDocumentId">
+            <key-many-to-one name="dynamicDoc" lazy="false" class="com.cx.dynamic_doc.entity.DynamicDoc">
+                <column name="doc_id"></column>
+            </key-many-to-one>
+
+            <key-property name="dynamic_id" type="java.lang.String">
+                <column name="dynamic_id" length="32"></column>
+            </key-property>
+
+        </composite-id>
+
+    </class>
+
+</hibernate-mapping>

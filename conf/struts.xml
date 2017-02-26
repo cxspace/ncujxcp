@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <!--禁用动态方法调用-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+
+    <!--配置成开发模式-->
+    <constant name="struts.devMode" value="true"/>
+
+    <!--把猪蹄配置成simple-->
+    <constant name="struts.ui.theme" value="simple"/>
+
+
+
+    <!--包含测试struts配置文件-->
+    <include file="com/cx/test/conf/struts-test.xml"></include>
+
+    <include file="com/cx/user/config/struts-user.xml"></include>
+
+    <include file="com/cx/home/conf/struts-home.xml"></include>
+
+    <include file="com/cx/inform/config/struts-inform.xml"></include>
+
+    <include file="com/cx/inform_doc/config/struts-informDoc.xml"></include>
+
+    <include file="com/cx/policy/config/struts-policy.xml"></include>
+
+    <include file="com/cx/policy_doc/config/struts-policyDoc.xml"></include>
+
+    <include file="com/cx/dynamic/config/struts-dynamic.xml"></include>
+
+    <include file="com/cx/dynamic_doc/config/struts-dynamicDoc.xml"></include>
+
+</struts>

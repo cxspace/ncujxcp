@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cx.inform.entity.InfoDocument" table="t_r_info_doc">
+
+        <composite-id name="infoDocumentId"  class="com.cx.inform.entity.InfoDocumentId">
+            <key-many-to-one name="infoDoc" lazy="false" class="com.cx.inform_doc.entity.InfoDoc">
+                <column name="doc_id"></column>
+            </key-many-to-one>
+
+            <key-property name="info_id" type="java.lang.String">
+                <column name="info_id" length="32"></column>
+            </key-property>
+
+        </composite-id>
+
+    </class>
+
+</hibernate-mapping>

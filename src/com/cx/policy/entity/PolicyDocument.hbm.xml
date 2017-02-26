@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cx.policy.entity.PolicyDocument" table="t_r_policy_doc">
+
+        <composite-id name="policyDocumentId"  class="com.cx.policy.entity.PolicyDocumentId">
+            <key-many-to-one name="policyDoc" lazy="false" class="com.cx.policy_doc.entity.PolicyDoc">
+                <column name="doc_id"></column>
+            </key-many-to-one>
+
+            <key-property name="policy_id" type="java.lang.String">
+                <column name="policy_id" length="32"></column>
+            </key-property>
+
+        </composite-id>
+
+    </class>
+
+</hibernate-mapping>

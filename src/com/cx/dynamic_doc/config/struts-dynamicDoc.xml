@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="dynamicDoc-action" namespace="/" extends="struts-default">
+
+
+        <!--class 可以从spring拿 , 也可以-->
+        <action name="sys_dynamicDoc_*" class="com.cx.dynamic_doc.action.DynamicDocSysAction" method="{1}">
+
+
+            <!--视图跳转-->
+            <result name="{1}">/WEB-INF/sys/dynamic_doc/{1}.jsp</result>
+
+            <result name="addUI">/WEB-INF/sys/dynamic_doc/addUI.jsp</result>
+
+            <result name="listUI">/WEB-INF/sys/dynamic_doc/listUI.jsp</result>
+
+            <result name="infoListUI">/WEB-INF/sys/dynamic_doc/dynamic_list.jsp</result>
+
+            <!--重定向到列表-->
+            <result name="list" type="redirectAction">
+                <param name="actionName">sys_dynamicDoc_listUI</param>
+            </result>
+
+            <result name="list_back" type="redirectAction">
+                <param name="actionName">sys_dynamicDoc_listBack</param>
+            </result>
+
+        </action>
+
+
+    </package>
+
+</struts>
