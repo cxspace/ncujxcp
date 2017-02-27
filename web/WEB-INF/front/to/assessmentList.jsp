@@ -144,20 +144,27 @@
 <div class="clear"></div>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <div class="links">
     <ul>
-        <li><a href="http://www.moe.gov.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link01.jpg" /></a></li>
-        <li><a href="http://www.pgzx.edu.cn/" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link02.jpg" /></a></li>
-        <li><a href="#" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-logo.png" /></a></li>
-        <li><a href="http://jwc.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-jwc.PNG" /></a></li>
-        <li><a href="http://dpb.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-ddb.PNG" /></a></li>
+        <li><a href="http://www.moe.gov.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link01.jpg" style="height: 60px" /></a></li>
+        <li><a href="http://www.pgzx.edu.cn/" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link02.jpg" style="height: 60px"/></a></li>
+        <li><a href="#" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-logo.png" style="height: 60px"/></a></li>
+        <li><a href="http://jwc.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-jwc.PNG" style="height: 60px"/></a></li>
+        <li><a href="http://dpb.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-ddb.PNG" style="height: 60px"/></a></li>
     </ul>
+
 </div>
 <div class="clear"></div>
 <div class="footer">
-<p>南昌大学 版权所有</p>
 
-<p>Copyright &copy; 2016 Peking University. All Rights Reserved</p>
+
+    <p>南昌大学 版权所有</p>
+
+    <p>南昌大学审核评估办公室联系方式:079183968568,079183968162</p>
+    <p>Copyright &copy; 2016 南昌大学信息工程学院. </p>
+
+
 
 </div>
 </body>

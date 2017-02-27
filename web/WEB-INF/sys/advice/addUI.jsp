@@ -32,7 +32,7 @@
     <script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/assets/js/ueditor/lang/zh-cn/zh-cn.js"></script>
 
     <script>
-        window.UEDITOR_HOME_URL = "../assets/js/ueditor/";
+        window.UEDITOR_HOME_URL = "${pageContext.request.contextPath}/assets/js/ueditor/";
         var ue = UE.getEditor('editor');
     </script>
 

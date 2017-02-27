@@ -47,7 +47,7 @@
 </div>
 <div class="title2">
 <h3><s:property value="policy.title"></s:property> </h3>
-<span>浏览次数<s:property value="policy.count"></s:property> </span>
+<span>浏览次数：<s:property value="policy.count"></s:property> </span>
 </div>
 <div class="main">
 
@@ -79,12 +79,17 @@
     </ul>
 </div>
 <div class="clear"></div>
-<div class="footer">
-<p>南昌大学 版权所有</p>
+    <div class="footer">
 
-<p>Copyright &copy; 2016 Peking University. All Rights Reserved</p>
 
-</div>
+        <p>南昌大学 版权所有</p>
+
+        <p>南昌大学审核评估办公室联系方式:079183968568,079183968162</p>
+        <p>Copyright &copy; 2016 南昌大学信息工程学院. </p>
+
+
+
+    </div>
 </div>
 </body>
 </html>
