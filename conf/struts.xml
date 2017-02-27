@@ -14,6 +14,7 @@
     <!--把猪蹄配置成simple-->
     <constant name="struts.ui.theme" value="simple"/>
 
+    <!--文件最大限制-->
     <constant name="struts.multipart.maxSize" value="104857600"></constant>
 
     <!--包含测试struts配置文件-->

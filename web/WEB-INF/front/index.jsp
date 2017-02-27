@@ -21,8 +21,6 @@
   <title>
 
     南昌大学本科教学审核评估网
-
-    
     
   </title>
   <!-- html之后到</title>==end -->
@@ -76,8 +74,6 @@
     <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
     <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
   </ul>
-
-  <!--<div class="banner"><img src="${pageContext.request.contextPath}/common/images/title_01.jpg" width="1000" height="320" /></div>-->
 </div>
 
 
@@ -119,7 +115,7 @@
             <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_inform_info_detail.action?info.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
           </li>
 
-            <br>
+
           </s:iterator>
 
 
@@ -171,7 +167,7 @@
             <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_assessment_assessment_detail.action?assessment.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
           </li>
 
-            <br/>
+
 
           </s:iterator>
 
@@ -190,7 +186,6 @@
             状态数据填报
           </h5>
 
-          <br>
 
           <div style="width: 288px;height: 70px">
             <a href="index.html"><img src="${pageContext.request.contextPath}/common/images/ztsjtb.jpg" style="width: 100%;height: 100%" alt="状态数据填报入口"/></a>
@@ -228,7 +223,7 @@
           <li>
             &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/<s:property value="link"></s:property>"><s:property value="title"></s:property></a>
           </li>
-          <br/>
+
           </s:iterator>
 
 
@@ -248,7 +243,7 @@
         <li>
           &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_policy_policy_detail.action?policy.id=<s:property value="id"></s:property> "><s:property value="title"></s:property></a>
         </li>
-        <br/>
+
         </s:iterator>
 
 
@@ -268,7 +263,7 @@
           <li>
             &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_advice_advice_detail.action?advice.id=<s:property value="id"></s:property>"><s:property value="title"></s:property></a>
           </li>
-          <br/>
+
           </s:iterator>
 
         </div>
@@ -305,8 +300,6 @@
 
   <p>南昌大学审核评估办公室联系方式:079183968568,079183968162</p>
   <p>Copyright &copy; 2016 南昌大学信息工程学院. </p>
-
-
 
 </div>
 </body>

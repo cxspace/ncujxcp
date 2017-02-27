@@ -16,7 +16,6 @@
 南昌大学本科教学审核评估网
 
 </title>
-<!-- html之后到</title>==end -->
 <link href="${pageContext.request.contextPath}/common/css/basic.css" rel="stylesheet" type="text/css" />
 <link href="${pageContext.request.contextPath}/common/css/pages.css" rel="stylesheet" type="text/css" />
 </head>

@@ -11,11 +11,15 @@
     <meta name="description" content="Neon Admin Panel" />
     <meta name="author" content="" />
 
-    
-    
-    
-    <title>OUR_SYS | INDEX</title>
 
+    <title>后台管理</title>
+
+    <%
+        if (session.getAttribute("USER_INFO")==null){
+
+            response.sendRedirect("sys_user_loginUI.action");
+        }
+    %>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font-icons/entypo/css/entypo.css">
 
