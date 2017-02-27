@@ -31,7 +31,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <div class="topline">
-  <div class="login"><a href="${pageContext.request.contextPath}/../sys/admin.html" target="_blank"></a></div>
+  <div class="login"><a href="${pageContext.request.contextPath}/sys_user_loginUI.action" target="_blank"></a></div>
 </div> 
 <div class="nav">
 

@@ -16,6 +16,7 @@
 
 
 
+
     <!--包含测试struts配置文件-->
     <include file="com/cx/test/conf/struts-test.xml"></include>
 
