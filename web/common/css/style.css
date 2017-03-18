@@ -179,7 +179,7 @@ h5{
 .content_center{
 	margin-top: 20px;
 	width: 100%;
-	height: 520px;
+	height: 240px;
 	/*background-color: #79c673;*/
 }
 
@@ -189,9 +189,54 @@ h5{
 	height: 300px;
 
 	padding-bottom: 30px;
-
 	margin-bottom: 10px;
 }
+
+
+.content_one_one_one{
+	background-color: #F8F8F8;
+	margin-top: 10px;
+	width: 100%;
+	height: 180px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+}
+
+.one_three{
+
+	width: 33%;
+	height: 100%;
+	float: left;
+
+}
+
+
+.content_one_two{
+
+	background-color: #F8F8F8;
+	margin-top: 10px;
+	width: 100%;
+	height: 320px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+}
+
+.one{
+
+	/*background-color: #0d99cd;*/
+	width: 45%;
+	height: 100%;
+    float: left;
+}
+
+.two{
+
+	/*background-color: #0d99cd;*/
+	width: 55%;
+	height: 100%;
+	float: left
+}
+
 
 /*通知公告*
  */

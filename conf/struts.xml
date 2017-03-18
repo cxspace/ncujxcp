@@ -5,6 +5,10 @@
 
 <struts>
 
+
+    <!--漏洞修补-->
+    <constant name="struts.custom.i18n.resources" value="global"/>
+
     <!--禁用动态方法调用-->
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 

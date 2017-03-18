@@ -7,9 +7,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
+<%--强制让360进入极速模式--%>
+<meta name="renderer" content="webkit">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 
 <META http-equiv=Content-Type content="text/html; charset=UTF-8">
 

@@ -44,7 +44,7 @@ public class InfoDaoImpl extends BaseDaoImpl<Info> implements InfoDao {
 
         query.setFirstResult(0);
 
-        query.setMaxResults(8);
+        query.setMaxResults(6);
 
         return query.list();
     }

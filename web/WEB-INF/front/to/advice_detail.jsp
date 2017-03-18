@@ -32,7 +32,7 @@
      <li><a href="${pageContext.request.contextPath}/front_inform_infoList.action">通知公告</a></li>
      <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
      <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
-     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学校自评</a></li>
+     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学校评建</a></li>
      <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
      <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
   </ul>
@@ -67,19 +67,23 @@
 
 
 </div>
-<div class="clear"></div>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<div class="links">
-    <ul>
-        <li><a href="http://www.moe.gov.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link01.jpg" /></a></li>
-        <li><a href="http://www.pgzx.edu.cn/" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link02.jpg" /></a></li>
-        <li><a href="#" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-logo.png" /></a></li>
-        <li><a href="http://jwc.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-jwc.PNG" /></a></li>
-        <li><a href="http://dpb.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-ddb.PNG" /></a></li>
-    </ul>
 </div>
-<div class="clear"></div>
+    <div class="clear"></div>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <div class="links">
+        <ul>
+            <li><a href="http://www.moe.gov.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link01.jpg" style="height: 60px" /></a></li>
+            <li><a href="http://www.pgzx.edu.cn/" target="_blank"><img src="${pageContext.request.contextPath}/common/images/link02.jpg" style="height: 60px"/></a></li>
+            <li><a href="http://www.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-logo.png" style="height: 60px"/></a></li>
+            <li><a href="http://jwc.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-jwc.PNG" style="height: 60px"/></a></li>
+            <li><a href="http://dpb.ncu.edu.cn" target="_blank"><img src="${pageContext.request.contextPath}/common/images/ncu-ddb.PNG" style="height: 60px"/></a></li>
+        </ul>
+
+    </div>
+    <div class="clear"></div>
     <div class="footer">
 
 
@@ -91,6 +95,6 @@
 
 
     </div>
-</div>
+
 </body>
 </html>

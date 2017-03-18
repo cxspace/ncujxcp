@@ -16,7 +16,7 @@
 			direction : 'left',//left,top
 			duration : 0.6,//unit:seconds
 			easing : 'swing',//swing,linear
-			delay : 3,//unit:seconds
+			delay : 5,//unit:seconds
 			startIndex : 0,
 			hideClickBar : true,
 			clickBarRadius : 5,//unit:px

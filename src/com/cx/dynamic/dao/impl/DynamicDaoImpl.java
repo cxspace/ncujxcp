@@ -45,7 +45,7 @@ public class DynamicDaoImpl extends BaseDaoImpl<Dynamic> implements DynamicDao {
 
         query.setFirstResult(0);
 
-        query.setMaxResults(6);
+        query.setMaxResults(7);
 
         return query.list();
     }

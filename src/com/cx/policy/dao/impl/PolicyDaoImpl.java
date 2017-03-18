@@ -41,7 +41,7 @@ public class PolicyDaoImpl extends BaseDaoImpl<Policy> implements PolicyDao {
 
         query.setFirstResult(0);
 
-        query.setMaxResults(8);
+        query.setMaxResults(6);
 
         return query.list();
     }

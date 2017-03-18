@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="commons-fileupload-1.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/struts/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/commons-lang3-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/commons-lang-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/freemarker-2.3.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/javassist-3.20.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/struts2-core-2.5.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/xmlpull-1.1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/xpp3_min-1.1.4c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/struts/xstream-1.4.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

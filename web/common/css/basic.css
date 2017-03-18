@@ -8,6 +8,8 @@
 	margin: 0;
 	border: 0px;
 }
+
+
 img{border:none;}
 .clear{
 	clear:both;
@@ -28,14 +30,14 @@ ul li{
 	width:100%;
 }
 .logo{
-	width:1000px;
+	width:1280px;
 	height:120px;
 	margin:0 auto;
-	background:url(../images/ncu.png) no-repeat left;
-	_background:url(../images/ncu.png) no-repeat left;
+	background:url(../images/ncu.jpg) no-repeat left;
+	_background:url(../images/ncu.jpg) no-repeat left;
 }
 .logo_back{
-	width:1000px;
+	width:1280px;
 	height:90px;
 	margin:0 auto;
 	background:url(../images/back_logo.png) no-repeat left;
@@ -48,7 +50,7 @@ ul li{
 	background:url(../images/line.png) repeat;
 }
 .login{
-	width:1000px;
+	width:1280px;
 	height:24px;
 	margin:0 auto;
 }
@@ -68,49 +70,56 @@ ul li{
 }
 .nav ul{
 	display:block;
-	width:1000px;
-	height:30px;
+	width:1280px;
+	height:50px;
 	margin:0 auto;
 }
 .nav ul li{
 	display:inline;
-	height:30px;
+	height:40px;
     list-style:none;
     list-style-position:outside;
-	font-size:16px;
+	font-size: 30px;
+	font-weight: 900;
 	padding:0 20px;
 }
+
+.nav ul li a{
+
+	font-size: 20px;
+
+}
+
 .nav ul li a:hover{
 	text-decoration:none;
 	color: #31459a;
 }
 .banner{
 	margin:0 auto;
-	width:1000px;
+	width:1280px;
 	height:195px;
 }
 .links{
 	width:100%;
 	height:150px;
-
 	background:#f1f1f1;
-	margin-top:5px;
+	margin-top:50px;
 }
 .content{
-	width:1000px;
+	width:1280px;
 	margin:0 auto;
-	border: #4976b4;
+	/*border: #4976b4;*/
 }
 .links ul{
 	display:block;
-	width:80%;
+	width:100%;
 	margin:0 auto;
 	padding-top:36px;
 	text-align:center;
 }
 .links ul li{
 	display:inline;
-	margin-right:4%;
+	margin-right:20px;
 	padding:0;
 }
 .links ul li a{
@@ -119,14 +128,14 @@ ul li{
 	margin:0;
 }
 .links ul li a img{
-	width:15%;
+	width:170px;
 	height:76px;
 	border:0;
 	margin:0;
 }
 .footer{
 	width:100%;
-	height:51px;
+	height:50px;
 	background:url(../images/footer.png) repeat-x;
 	text-align:center;
 	padding-top:14px;
