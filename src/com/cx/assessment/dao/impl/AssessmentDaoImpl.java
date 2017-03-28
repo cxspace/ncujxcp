@@ -41,11 +41,11 @@ public class AssessmentDaoImpl extends BaseDaoImpl<Assessment> implements Assess
     @Override
     public List<Assessment> findIndexAssessment() {
 
-        Query query = getSession().createQuery("from Assessment");
+        Query query = getSession().createQuery("from Assessment order by time desc");
 
         query.setFirstResult(0);
 
-        query.setMaxResults(6);
+        query.setMaxResults(5);
 
         return query.list();
     }

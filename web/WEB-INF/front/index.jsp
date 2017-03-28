@@ -72,15 +72,27 @@
     <li><a href="${pageContext.request.contextPath}/zzjg.html">
       组织机构
     </a></li>
+
+      <font color=“#ffffff”>  | </font>
+
     <li><a href="${pageContext.request.contextPath}/front_inform_infoList.action">
     通知公告
     </a></li>
+      <font color=“#ffffff”>  | </font>
+
+
     <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
+      <font color=“#ffffff”>  | </font>
     <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
-    <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评建</a></li>
-    <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
-    <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
+      <font color=“#ffffff”>  | </font>
+    <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评估</a></li>
+      <font color=“#ffffff”>  | </font>
+      <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
+      <font color=“#ffffff”>  | </font>
+      <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
+      <font color=“#ffffff”>  | </font>
     <li><a href="${pageContext.request.contextPath}/">状态数据</a></li>
+
 
   </ul>
 </div>
@@ -96,11 +108,11 @@
 
       <ul class="items">
 
-        <li><a><img src="${pageContext.request.contextPath}/common/images/title_01.jpg" style="width:1280px;height:220px" ></a></li>
+        <li><a><img src="${pageContext.request.contextPath}/common/images/title_01.jpg" style="width:1000px;height:220px" ></a></li>
 
-        <li><a><img src="${pageContext.request.contextPath}/common/images/title_02.jpg" style="width:1280px;height:220px"></a></li>
+        <li><a><img src="${pageContext.request.contextPath}/common/images/title_02.jpg" style="width:1000px;height:220px"></a></li>
 
-        <li><a><img src="${pageContext.request.contextPath}/common/images/title_03.jpg" style="width:1280px;height:220px"></a></li>
+        <li><a><img src="${pageContext.request.contextPath}/common/images/title_03.jpg" style="width:1000px;height:220px"></a></li>
 
 
       </ul>
@@ -153,11 +165,26 @@
 
         <s:iterator value="dynamicList" status="st">
 
-        <li>
+
+
+        <li style="margin-bottom:8px">
+
+
+
+
+          <s:if test="#st.index < 2">
+
+          <img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>
+
+          </s:if>
+          <s:else>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </s:else>
+
         <span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/front_dynamic_dynamic_detail.action?dynamic.id=<s:property value="id"></s:property>">
 
-          <s:if test="title.length()>24">
-            <s:property value='title.substring(0,24)'/>...
+          <s:if test="title.length()>28">
+            <s:property value='title.substring(0,28)'/>...
           </s:if>
           <s:else>
             <s:property value='title'/>
@@ -166,7 +193,6 @@
         </a>
         </li>
 
-        <br/>
 
         </s:iterator>
 
@@ -193,13 +219,23 @@
         <s:iterator value="infoList" status="st">
 
 
-        <li>
+        <li style="margin-bottom:5px">
+
+          <s:if test="#st.index < 2">
+
+            <img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>
+
+          </s:if>
+          <s:else>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </s:else>
+
+
         <%--<span><s:property value="time"></s:property></span> --%>
-          &nbsp;&nbsp;&nbsp;
         <a href="${pageContext.request.contextPath}/front_inform_info_detail.action?info.id=<s:property value="id"></s:property>">
 
-        <s:if test="title.length()>22">
-        <s:property value='title.substring(0,22)'/>...
+        <s:if test="title.length()>18">
+        <s:property value='title.substring(0,18)'/>...
         </s:if>
         <s:else>
         <s:property value='title'/>
@@ -209,7 +245,6 @@
 
         </li>
 
-        <%--<br/>--%>
 
 
         </s:iterator>
@@ -225,26 +260,35 @@
 
         <h5>
         <a class="more" href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">更多 >></a>
-        学院评建
+          学院评估
         </h5>
         <br/>
 
         <s:iterator value="assessmentList" status="st">
 
-        <li>
+        <li style="margin-bottom:5px">
+
+          <s:if test="#st.index < 2">
+
+            <img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>
+
+          </s:if>
+          <s:else>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </s:else>
+
 
         <%--<span><s:property value="time"></s:property></span> &nbsp;&nbsp;&nbsp;--%>
 
           <a href="${pageContext.request.contextPath}/front_assessment_assessment_detail.action?assessment.id=<s:property value="id"></s:property>">
-        <s:if test="title.length()>22">
-        <s:property value='title.substring(0,22)'/>...
+        <s:if test="title.length()>18">
+        <s:property value='title.substring(0,18)'/>...
         </s:if>
         <s:else>
         <s:property value='title'/>
         </s:else>
         </a>
         </li>
-        <%--<br/>--%>
 
 
         </s:iterator>
@@ -262,11 +306,22 @@
         <br>
 
         <s:iterator value="documentList" status="st">
-        <li>
-        &nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/<s:property value="link"></s:property>">
+        <li style="margin-bottom:5px">
 
-          <s:if test="title.length()>22">
-            <s:property value='title.substring(0,22)'/>...
+          <s:if test="#st.index < 2">
+
+            <img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>
+
+          </s:if>
+          <s:else>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </s:else>
+
+
+          <a target="_blank" href="${pageContext.request.contextPath}/<s:property value="link"></s:property>">
+
+          <s:if test="title.length()>18">
+            <s:property value='title.substring(0,18)'/>...
           </s:if>
           <s:else>
             <s:property value='title'/>
@@ -274,7 +329,6 @@
         </a>
 
         </li>
-        <%--<br/>--%>
         </s:iterator>
 
 

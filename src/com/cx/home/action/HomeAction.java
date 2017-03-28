@@ -18,6 +18,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -89,6 +90,7 @@ public class HomeAction extends ActionSupport {
 
             time = time.substring(5,11);
 
+
             assessmentList.get(i).setTime(time);
 
         }
@@ -101,6 +103,7 @@ public class HomeAction extends ActionSupport {
 
             time = time.substring(5,11);
 
+
             dynamicList.get(i).setTime(time);
 
         }
@@ -110,6 +113,8 @@ public class HomeAction extends ActionSupport {
         policyList = policyService.findIndexPolicy();
 
         newsList = newsService.findObjects();
+
+
 
         return "front_index";
     }

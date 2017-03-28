@@ -41,7 +41,7 @@ public class DynamicDaoImpl extends BaseDaoImpl<Dynamic> implements DynamicDao {
     @Override
     public List<Dynamic> findIndexDynamic() {
 
-        Query query = getSession().createQuery("from Dynamic");
+        Query query = getSession().createQuery("from Dynamic order by time desc");
 
         query.setFirstResult(0);
 

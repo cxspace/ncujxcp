@@ -29,11 +29,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
  <ul>
      <li><a href="${pageContext.request.contextPath}/">首页</a></li>
-     <li><a href="${pageContext.request.contextPath}/">组织机构</a></li>
+     <li><a href="${pageContext.request.contextPath}/zzjg.html">组织机构</a></li>
      <li><a href="${pageContext.request.contextPath}/front_inform_infoList.action">通知公告</a></li>
      <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
      <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
-     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学校评建</a></li>
+     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评估</a></li>
      <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
      <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
   </ul>

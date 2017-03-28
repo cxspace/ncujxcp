@@ -40,11 +40,11 @@ public class InfoDaoImpl extends BaseDaoImpl<Info> implements InfoDao {
     @Override
     public List<Info> findIndexInfo() {
 
-        Query query = getSession().createQuery("from Info");
+        Query query = getSession().createQuery("from Info order by time desc");
 
         query.setFirstResult(0);
 
-        query.setMaxResults(6);
+        query.setMaxResults(5);
 
         return query.list();
     }

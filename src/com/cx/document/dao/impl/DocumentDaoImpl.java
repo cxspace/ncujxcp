@@ -13,11 +13,11 @@ import java.util.List;
 public class DocumentDaoImpl extends BaseDaoImpl<Document> implements DocumentDao {
     @Override
     public List<Document> findIndexDocument() {
-        Query query = getSession().createQuery("from Document");
+        Query query = getSession().createQuery("from Document order by time desc");
 
         query.setFirstResult(0);
 
-        query.setMaxResults(6);
+        query.setMaxResults(5);
 
         return query.list();
     }
