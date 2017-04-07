@@ -33,6 +33,34 @@ public class PolicySysAction extends BaseAction {
         return "addUI";
     }
 
+
+    public String editUI(){
+
+        if (policy!=null){
+
+            if (policy.getId()!=null){
+
+                policy = policyService.findObjectById(policy.getId());
+
+            }
+
+        }
+
+        return "editUI";
+
+    }
+
+    public String edit(){
+
+        if (policy!=null){
+
+            policyService.update(policy);
+
+        }
+
+        return "list";
+    }
+
     public String add(){
 
         if (policy != null){

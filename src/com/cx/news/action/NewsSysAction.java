@@ -41,6 +41,35 @@ public class NewsSysAction extends BaseAction {
         return "listUI";
     }
 
+
+    public String editUI(){
+
+        if (news != null){
+
+            if (news.getId()!=null){
+
+                 news = newsService.findObjectById(news.getId());
+
+            }
+
+        }
+
+        return "editUI";
+
+    }
+
+    public String edit(){
+
+        if (news!=null){
+
+            newsService.update(news);
+
+        }
+
+        return "list";
+
+    }
+
     public String addUI(){
 
         return "addUI";

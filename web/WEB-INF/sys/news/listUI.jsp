@@ -349,6 +349,12 @@
                         删除
                     </a>
 
+                    <a href="${pageContext.request.contextPath}/sys_news_editUI.action?news.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
+                        <i class="entypo-book"></i>
+                        编辑
+                    </a>
+
+
                 </td>
 
 

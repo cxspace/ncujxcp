@@ -35,6 +35,36 @@ public class InformSysAction extends BaseAction {
         return "addUI";
     }
 
+    public String editUI(){
+
+        if (info != null){
+
+            if (info.getId()!=null){
+
+                info = infoService.findObjectById(info.getId());
+
+            }
+
+        }
+
+        return "editUI";
+
+    }
+
+    public String edit(){
+
+
+        if (info!=null){
+
+            infoService.update(info);
+
+        }
+
+        return "list";
+
+    }
+
+
     public String add(){
 
         if (info != null){

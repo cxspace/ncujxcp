@@ -344,6 +344,11 @@
                         删除
                     </a>
 
+                    <a href="${pageContext.request.contextPath}/sys_dynamic_editUI.action?dynamic.id=<s:property value="id"></s:property>" class="btn btn-danger btn-sm btn-icon icon-left">
+                        <i class="entypo-cancel"></i>
+                        编辑
+                    </a>
+
                 </td>
 
 

@@ -28,6 +28,32 @@ public class AssessmentSysAction {
         return "listUI";
     }
 
+    public String editUI(){
+
+        if (assessment!=null){
+
+            if (assessment.getId()!=null){
+
+                assessment = assessmentService.findObjectById(assessment.getId());
+
+            }
+
+        }
+
+        return "editUI";
+    }
+
+    public String edit(){
+
+        if (assessment!=null){
+
+            assessmentService.update(assessment);
+
+        }
+
+        return "list";
+    }
+
     public String addUI(){
 
         return "addUI";

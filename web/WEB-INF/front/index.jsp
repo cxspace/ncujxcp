@@ -85,7 +85,7 @@
       <font color=“#ffffff”>  | </font>
     <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
       <font color=“#ffffff”>  | </font>
-    <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评估</a></li>
+    <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评建</a></li>
       <font color=“#ffffff”>  | </font>
       <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
       <font color=“#ffffff”>  | </font>
@@ -260,7 +260,7 @@
 
         <h5>
         <a class="more" href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">更多 >></a>
-          学院评估
+          学院评建
         </h5>
         <br/>
 

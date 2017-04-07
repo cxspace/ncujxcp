@@ -33,6 +33,28 @@ public class DynamicSysAction {
         return "addUI";
     }
 
+    public String editUI(){
+
+        if (dynamic != null){
+
+            if (dynamic.getId()!=null);
+
+            dynamic = dynamicService.findObjectById(dynamic.getId());
+
+        }
+
+        return "editUI";
+    }
+
+    public String edit(){
+
+        if (dynamic!=null){
+            dynamicService.update(dynamic);
+        }
+
+        return "list";
+    }
+
     public String add(){
 
         if (dynamic != null){

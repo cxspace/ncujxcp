@@ -10,8 +10,7 @@
 
 <META http-equiv=Content-Type content="text/html; charset=UTF-8">
 
- <base href="">
- 
+<meta name="renderer" content="webkit">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
@@ -48,7 +47,7 @@
          <font color=“#ffffff”>  | </font>
          <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
          <font color=“#ffffff”>  | </font>
-         <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评估</a></li>
+         <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评建</a></li>
          <font color=“#ffffff”>  | </font>
          <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
          <font color=“#ffffff”>  | </font>
@@ -78,14 +77,14 @@
 
         <li>
 
-            <s:if test="#st.index < 2">
+            <%--<s:if test="#st.index < 2">--%>
 
-                <img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>
+                <%--<img src="${pageContext.request.contextPath}/common/images/new.png" alt="最新"/>--%>
 
-            </s:if>
-            <s:else>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </s:else>
+            <%--</s:if>--%>
+            <%--<s:else>--%>
+                <%--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
+            <%--</s:else>--%>
 
 
             <a target="_parent"  href="${pageContext.request.contextPath}/front_assessment_assessment_detail.action?assessment.id=<s:property value="id"></s:property>"><span><s:property value="time"></s:property></span><s:property value="title"></s:property></a>

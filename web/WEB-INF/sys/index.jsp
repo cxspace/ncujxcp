@@ -124,13 +124,13 @@
 
                         <li>
                             <a href="${pageContext.request.contextPath}/sys_assessment_listUI.action">
-                                <span class="title">学校自评管理</span>
+                                <span class="title">学院评建管理</span>
                             </a>
                         </li>
 
                         <li>
                             <a href="${pageContext.request.contextPath}/sys_assessmentDoc_assessment_list.action">
-                                <span class="title">学校自评附件管理</span>
+                                <span class="title">学院评建附件管理</span>
                             </a>
                         </li>
 

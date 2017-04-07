@@ -33,6 +33,32 @@ public class AdviceSysAction {
         return "addUI";
     }
 
+    public String editUI(){
+
+        if (advice!=null){
+
+            if (advice.getId()!=null){
+
+                advice = adviceService.findObjectById(advice.getId());
+            }
+
+        }
+
+
+        return "editUI";
+    }
+
+    public String edit(){
+
+        if (advice!=null){
+
+            adviceService.update(advice);
+        }
+
+        return "list";
+
+    }
+
     public String add(){
 
         if (advice != null){

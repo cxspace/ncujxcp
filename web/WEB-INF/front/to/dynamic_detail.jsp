@@ -8,8 +8,7 @@
 
 <META http-equiv=Content-Type content="text/html; charset=UTF-8">
 
- <base href="">
-<head>
+<meta name="renderer" content="webkit"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
 
@@ -33,7 +32,7 @@
      <li><a href="${pageContext.request.contextPath}/front_inform_infoList.action">通知公告</a></li>
      <li><a href="${pageContext.request.contextPath}/front_policy_policyList.action">政策文件</a></li>
      <li><a href="${pageContext.request.contextPath}/front_dynamic_dynamicList.action">评估动态</a></li>
-     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评估</a></li>
+     <li><a href="${pageContext.request.contextPath}/front_assessment_assessmentList.action">学院评建</a></li>
      <li><a href="${pageContext.request.contextPath}/front_advice_adviceList.action">他山之石</a></li>
      <li><a href="${pageContext.request.contextPath}/front_document_documentList.action">资料下载</a></li>
   </ul>
@@ -45,18 +44,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 			 
 </div>
-<div class="title2">
-<h3><s:property value="dynamic.title"></s:property> </h3>
-<span>浏览次数：<s:property value="dynamic.count"></s:property> </span>
-</div>
-<div class="main">
+
+
+    <div class="title2">
+        <h1 style="text-align: center;font-size: 30px;color: black"><s:property value="dynamic.title"></s:property>
+        </h1>
+        <span>浏览次数：<s:property value="dynamic.count"></s:property> </span>
+    </div>
+    <br/>
 
 <p><s:property value="dynamic.content" escape="false"></s:property>
 </p>
 
-</h5>
 
-    <p>附件列表:</p>
+    <s:if test="dynamicDocList.size()>0">
+
+
+        <p>附件列表:</p>
+
+
+    </s:if>
 
     <s:iterator value="dynamicDocList" status="st">
         <p>
@@ -65,7 +72,6 @@
         </p>
     </s:iterator>
 
-</div>
 </div>
 <div class="clear"></div>
 
