@@ -45,7 +45,7 @@ public class AssessmentDaoImpl extends BaseDaoImpl<Assessment> implements Assess
 
         query.setFirstResult(0);
 
-        query.setMaxResults(5);
+        query.setMaxResults(7);
 
         return query.list();
     }
